@@ -295,9 +295,6 @@ function draw() {
       if((sweep.isTouching(ednaldoScore)) && (protecao == 1)){
         imunidade = 100;
       }
-      if((sweep.isTouching(trollScore)) && (trollado == 1) && (estado == 2) && (trollScore != undefined)){
-        trollScore.visible = false;
-      }
     }
 
     //1: Obunga e cebolas (O Shrek só aparece na próxima fase)
