@@ -538,13 +538,13 @@ function blasterConf(){
     imagensGroup.add(blaster);
     uin.play();
     setTimeout(function() {
-      blaster.velocityX = -50;
+      blaster.velocityX = -40;
       pou.play();
     }, 1000);
     setTimeout(function() {
       blaster.remove;
       blasterGerados = 0;
-    }, 2000);
+    }, 3000);
   }
 }
 
