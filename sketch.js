@@ -208,7 +208,7 @@ function draw() {
     //Sistema do controle da corrida do player
     distancia = distancia + 0.1
     player.velocityY = player.velocityY + 0.3;
-    if ((mouseWentDown()) || (keyDown("space"))){
+    if (mouseWentDown()){
       if ((player.velocityY > 0) && (trollado == 0)){
         player.velocityY = 0;
       }
