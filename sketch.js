@@ -527,16 +527,16 @@ function perdendoParaAranha(){
 
 //Blaster
 function blasterConf(){
-  blasterChance = Math.floor(Math.random() * 501);
-  if ((blasterChance == 500) && (blasterGerados == 0)){
+  blasterChance = Math.floor(Math.random() * 1);
+  if ((blasterChance == 0) && (blasterGerados == 0)){
     blaster = createSprite(1500, player.y);
     blaster.addImage ("blaster", blasterImg);
-    blaster.scale = 0.5;
+    blaster.scale = 0.4;
     blasterGerados = 1;
     imagensGroup.add(blaster);
     uin.play();
     setTimeout(function() {
-      blaster.velocityX = -40;
+      blaster.velocityX = -30;
       pou.play();
     }, 1000);
     setTimeout(function() {
