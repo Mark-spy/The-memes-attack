@@ -113,6 +113,7 @@ function setup() {
 
   //Loop da rua
   musMenu.loop();
+  musMenu.volume = 0.8;
   rua = createSprite(600,300);
   rua.addImage("rua",ruaImg);
   rua.scale = 1.25;
@@ -443,6 +444,7 @@ function draw() {
 
 function iniciando(){
   musJogando.loop();
+  musJogando.volume = 0.8;
   vaiMorre.play();
   click.play();
 }
